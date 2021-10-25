@@ -1,0 +1,469 @@
+/* BASE*/
+body
+{
+    font-family: 'Raleway', sans-serif;
+}
+.flexcentre
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flexbetween
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flexaround
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.flexcolumnbetween{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.flexcolumncentre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header
+{
+    font-family: 'Raleway', sans-serif;
+}
+/* NAVIGATION*/
+
+.taillelien
+{
+    width: 20%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+.decorationlien
+{
+    text-decoration: none;
+    height: 120px;
+}
+.borderHebergement:hover
+{
+    border-top: #0065fc 2px solid;
+    color:black;
+    cursor: pointer;
+}
+.borderHebergement
+{
+    border-top: 2px solid transparent;
+    color:#0065fc;
+}
+.decoactivité
+{
+    color:black;
+}
+/* BARRE  DE RECHERCHE*/
+
+.flextexte
+{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 15px;
+    font-family: 'Raleway', sans-serif;
+    height: 90px;
+    line-height: 5px;
+    font-size: 14px;
+}
+.logo
+{
+    margin-left: 15px;
+}
+.recherche
+{
+    display: flex;
+    height: 50px;
+    width: 400px;
+    justify-content: flex-start;
+    margin-left: 15px;
+}
+.barre
+{
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    border:0.5px #F2F2F2 solid; 
+
+}
+.icon
+{
+    width: 50px;
+    height: 50px;
+    background-color:#F2F2F2;
+    border-radius: 10px 0 0 10px;
+}
+.boutton
+{
+    background-color: #0065fc;
+    height: 50px;
+    width: 120px;
+    color: white;
+    cursor: pointer;
+    border-radius: 0px 10px 10px 0px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+.boutton:hover
+{
+color: #0065fc;
+background-color: #F2F2F2;
+}
+
+/* FILTRE*/
+
+.noborder
+{
+    border: none;
+}
+.filtre
+{
+    display: flex;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    height: 50px;
+    margin-left: 15px;
+}
+.margefiltre
+{
+    margin-right: 30px;
+    font-weight: bold;
+}
+.decoicontexte
+{
+    border: 1px solid #F2F2F2;
+    border-radius: 30px;
+    height: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.decoicon
+{
+    border-radius: 25px;
+    width: 52px;
+    height: 52px;
+    color: #0065fc;
+    background-color:#deebff;
+}
+.decoicon:hover{
+    color: #F2F2F2;
+    background-color: #0065fc;
+}
+.decotexte
+{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* INFO*/
+.info{
+    display: flex;
+    width: 420px;
+    font-size: 14px;
+    margin-left: 10px;
+
+}
+.logoinfo
+{
+    color: #0065fc;
+    border: 1px solid #F2F2F2;
+    border-radius:25px;
+    width: 30px;
+    height: 30px;
+}
+/* Hébergements */
+
+.hébergement{
+    flex: 2;
+    height: 650px;
+    margin-right: 20px;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+}
+.boxhebergement{
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.carte{
+    width: 23%;
+    height: 250px;
+    background-color: white;
+    padding: 8px;
+    border-radius: 25px;
+}
+.carte:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.sizePopulaire{
+    flex: 1;
+    height: 650px;
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+}
+.imghebergement1{
+    background-image: url("../img/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px 25px 0 0;
+
+}
+.imghebergement2{
+    background-image: url("../img/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+
+}
+.imghebergement3{
+    background-image: url("../img/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+
+}
+.imghebergement4{
+    background-image: url("../img/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+
+}
+.imghebergement5{
+    background-image: url("../img/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+
+}
+.imghebergement6{
+    background-image: url("../img/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+
+}
+.pack3{
+    width: 1250px;
+    margin-left: 15px;
+    margin-bottom: 27px;
+}
+.pack6{
+    width: 1250px;
+    margin-left: 15px;
+}
+.etoiles{
+    display: flex;
+    color: #0065fc;
+}
+.sansetoiles{
+    color: #F2F2F2;
+
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Populaires*/
+
+.blocPopulaires
+{
+padding-left: 20px;
+padding-right: 20px;
+}
+.cubepopulaires{
+    background-color: white;
+    height: auto;
+    padding: 1% 0 1% 1%;
+    border-radius: 20px;
+}
+.cubepopulaires:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.imgpop1
+{
+    background-image: url("../img/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    width: 35%;
+    height: 160px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 0 0 15px; 
+}
+.imgpop2
+{
+    background-image: url("../img/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+    width: 35%;
+    height: 160px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 0 0 15px; 
+}
+.imgpop3
+{
+    background-image: url("../img/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+    width: 35%;
+    height: 160px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 0 0 15px; 
+}
+.blocPopulaires12{
+    margin-bottom: 2px;
+
+}
+.cubedetailspopulaires{
+    width: 60%;
+    padding-left: 5%;
+}
+.bloc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height:600px;
+}
+/* Activités*/
+.Activites {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.blocActivites{
+    width: 100%;
+    height: 600px;
+}
+.blocActivites2356{
+    width: 23%;
+    height: 600px;
+}
+.imgActivites1
+{
+    background-image: url("../img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    width: 100%;
+    height: 530px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0px 0px; 
+}
+.imgActivites2
+{
+    background-image: url("../img/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0px 0px; 
+}
+.imgActivites3
+{
+    background-image: url("../img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0px 0px; 
+}
+.imgActivites4
+{
+    background-image: url("../img/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    width: 100%;
+    height: 530px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0px 0px; 
+}
+.imgActivites5
+{
+    background-image: url("../img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0px 0px; 
+}
+.imgActivites6
+{
+    background-image: url("../img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0px 0px; 
+}
+.hauteurTitre{
+    height: 70px;
+}
+.titreActivites{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5%;
+    width: 95%;
+}
+.cubeActivites{
+    width: 23%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cubeActivites:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.cubeActivites2356{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #F2F2F2;
+}
+.cubeActivites2356:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+/* FOOTER*/
+
+.footer
+{
+    height: 300px;
+    margin-top: 100px;
+    background-color: #F2F2F2;
+}
+.tailleBlocFoot
+{
+    height: 150px;
+}
+.margeBlocFoot1{
+    margin-left: 5%;
+}
+.margeBlocFoot3{
+    margin-right: 15%;
+}
