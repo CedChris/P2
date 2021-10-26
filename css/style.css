@@ -31,6 +31,22 @@ body
     flex-direction: column;
     justify-content: center;
 }
+.flexend{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.flexcolumnaround
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.flexcolumnstart{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 header
 {
     font-family: 'Raleway', sans-serif;
@@ -39,7 +55,7 @@ header
 
 .taillelien
 {
-    width: 20%;
+    width: 100%;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
 }
@@ -58,6 +74,17 @@ header
 {
     border-top: 2px solid transparent;
     color:#0065fc;
+    margin-right: 25px;
+}
+.titreh2{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: auto;
+    height: 50%;
+}
+header h2{
+    height: 50px;
+    flex-wrap: wrap;
 }
 .decoactivité
 {
@@ -68,10 +95,11 @@ header
 .flextexte
 {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: flex-start;
     margin-left: 15px;
     font-family: 'Raleway', sans-serif;
-    height: 90px;
+    height: 120px;
     line-height: 5px;
     font-size: 14px;
 }
@@ -450,7 +478,6 @@ padding-right: 20px;
     transform: scale(1.03);
 }
 /* FOOTER*/
-
 .footer
 {
     height: 300px;
