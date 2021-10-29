@@ -529,7 +529,9 @@ padding-right: 10px;
       margin-left: 0px;
   }
   .recherche{
-      width: 100%;
+      width: 350px;
+      margin-left: 0px;
+      margin-right: 0px;
   }
   .info{
       width: 90%;
