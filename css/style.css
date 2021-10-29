@@ -1,4 +1,6 @@
 /* BASE*/
+
+
 body
 {
     font-family: 'Raleway', sans-serif;
@@ -71,6 +73,7 @@ a {
     width: 100%;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
+    margin-right: 20px;
 }
 .decorationlien
 {
@@ -180,7 +183,11 @@ background-color: #F2F2F2;
     margin-top: 30px;
     margin-bottom: 30px;
     height: 120px;
-    margin-left: 15px;
+    margin-left: 50px;
+}
+.mobilefiltre{
+    width: 70%;
+    justify-content: flex-start;
 }
 .margefiltre
 {
@@ -217,12 +224,16 @@ background-color: #F2F2F2;
 .taillefiltre{
     height: 130px;
 }
+.familial{
+    display: flex;
+}
 /* INFO*/
 .info{
     display: flex;
     width: 420px;
     font-size: 14px;
     margin-left: 10px;
+    margin-bottom: 10px;
 
 }
 .logoinfo
@@ -234,11 +245,14 @@ background-color: #F2F2F2;
     height: 30px;
 }
 /* Hébergements */
-
+section{
+    width: 100%;
+}
 .hébergement{
     height: 700px;
-    width:1000px;
-    margin-right: 20px;
+    width:60%;
+    margin-right: 30px;
+    margin-left: 50px;
     border-radius: 10px;
     background-color: #F2F2F2;
 }
@@ -263,7 +277,7 @@ background-color: #F2F2F2;
 }
 .sizePopulaire{
     height: 700px;
-    width: 300px;
+    width: 30%;
     margin-left: 20px;
     border-radius: 10px;
     background-color: #F2F2F2;
@@ -395,6 +409,7 @@ padding-right: 10px;
 }
 .cubedetailspopulaires{
     width: 60%;
+    height: 120px;
     padding-left: 5%;
 }
 .bloc{
@@ -407,6 +422,8 @@ padding-right: 10px;
 .Activites {
     margin-top: 50px;
     margin-bottom: 50px;
+    margin-left: 50px;
+    width: 95%;
 }
 .blocActivites{
     width: 100%;
@@ -544,6 +561,7 @@ padding-right: 10px;
       height: auto;
       margin-top: 20px;
       margin-bottom: 20px;
+      margin-left: 5px;
   } 
   .familial{
       display: flex;
