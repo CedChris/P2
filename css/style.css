@@ -9,6 +9,8 @@ header nav{
 }
 header nav img{
     margin-left: 1%;
+    width: 120px;
+    height: 50px;
 }
 #lien{
     display: flex;
