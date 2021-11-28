@@ -1,5 +1,6 @@
 body{
     font-family: 'Raleway' , sans-serif;
+    margin: 0px;
 }
 /* * * * * * * * * * * * * * * * *NAVIGATION* * * * * * * * * * * * * * * * */
 header nav{
@@ -8,44 +9,43 @@ header nav{
     width: 98%;
 }
 header nav img{
-    margin-left: 1%;
     width: 120px;
     height: 50px;
+}
+.booki{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    width: 170px;
+    height: 100px;
 }
 #lien{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-weight: bold;
     width: 250px;
 }
 #lien a{
     text-decoration: none;
 
 }
-#lien a:first-child:hover{
-    cursor: pointer; 
-    margin-top: -2px;
-    border-top: #0065fc 2px solid;
-}
 .lien1{
-    height: 50px;
+    height: 100px;
     width: 130px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #0065fc;
     border-top: #0065fc 2px solid;
-    margin-top: -2px;
 }
 .lien2 a:hover{
     cursor: pointer;
     border: black 2px solid;
-    margin-top: -2px;
 }
 .lien2{
     width: auto;
-    height: 50px;
+    margin-top: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,7 +63,7 @@ header nav img{
     margin-left: 20px;
 }
 #texte h1{
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 22px;
 }
 /* * * * * * * * * * * * * * * * *BARRE DE RECHERCHE* * * * * * * * * * * * * * * * */
@@ -92,8 +92,7 @@ header nav img{
     border: 1px solid #F2F2F2 ;
     font-weight: bold;
 }
-#recherche p
-{
+#recherche p{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,6 +104,7 @@ header nav img{
     font-weight: bold;
     color: white;
     background-color: #0065fc;
+    cursor: pointer;
 }
 .bouton{
     display: none;
@@ -117,7 +117,7 @@ header nav img{
     height: 50px;
     width: auto;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     margin-left: 1%;
     font-weight: bold;
 }
@@ -160,12 +160,14 @@ header nav img{
 #info{
     display: flex;
     justify-content: space-between;
-    width: 400px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 500px;
     font-size: 14px;
-    margin-left: 1%;
-    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-bottom: 20px;
 }
-#info i{
+.logoi{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -174,6 +176,12 @@ header nav img{
     border-radius:25px;
     width: 30px;
     height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+    margin-right: 0px;
+}
+#info p {
+    padding-left: 10px;
 }
 /* * * * * * * * * * * * * * * *CADRE HÉBERGEMENT* * * * * * * * * * * * * * * */
 main section{
@@ -184,20 +192,23 @@ main section{
 }
 #hebergementpop{
     justify-content: center;
+    height: 700px;
 }
 article a{
     text-decoration: none;
     color: black;
 }
-#hebergement h2:first-child{
+.titrehebergement{
     height: 20px;
-    margin-left: 50px;
-    margin-bottom: 50px;
+    margin-left: 6%;
+    margin-bottom: 20px;
+    font-weight: bolder;
 }
 #hebergement{
     background-color: #F2F2F2;
     height: auto;
     width: 65%;
+    min-width: 725px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -219,7 +230,20 @@ article a{
     align-items: flex-start;
     font-weight: bold;
     margin: 20px;
-    margin-left: 45px;
+    margin-left: 6%;
+}
+.description{
+    width: 90%;
+    justify-content: flex-start;
+    height: 45%;
+}
+.description h2{
+    margin-left: 0px;
+    margin-top: 7px;
+}
+.description p{
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 .afficher a{
     text-decoration: none;
@@ -227,13 +251,13 @@ article a{
     justify-content: flex-start;
     font-weight: bold;
     margin: 20px;
-    margin-left: 60px;
+    margin-left: 6%;
     color: black;
 }
 #hebergement article{
-    width: 21%;
-    min-width: 200px;
-    height: 270px;
+    width: 24%;
+    min-width: 230px;
+    height: 210px;
     background-color: white;
     border: 1px solid transparent;
     border-radius: 15px;
@@ -241,6 +265,7 @@ article a{
     flex-direction: column;
     align-items: center;
     padding: 3px;
+    box-shadow: 0 0 10px #0000002e;
 }
 #hebergement article:hover{
     cursor: pointer;
@@ -248,7 +273,7 @@ article a{
 }
 #hebergement article img{
     width: 100%;
-    height: 150px;
+    height: 60%;
     background-size: cover;
     background-position: center;
     border: 1px solid transparent;
@@ -257,16 +282,17 @@ article a{
 .cartehebergement1{
     display: flex;
     justify-content: space-around;
-    margin-bottom: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 .cartehebergement2{
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 main section article h2{
     font-size: 18px;
@@ -274,8 +300,8 @@ main section article h2{
 }
 /* * * * * * * * * * * * * * * *CADRE POPULAIRE* * * * * * * * * * * * * * * */
 #populaire{
-    width: 32%;
-    margin-left: 15px;
+    width: 30%;
+    margin-left: 2%;
     background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
@@ -290,16 +316,19 @@ main section article h2{
 .headerpop{
     display: flex;
     justify-content:space-between;
-    width: 90%;
-    margin-left: 25px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10px;
+    font-weight: bolder;
 }
 #populaire article{
-    width: 90%;
+    width: 80%;
     height: 160px;
     display: flex;
     background-color: white;
     border-radius: 15px;
     border: 4px solid transparent;
+    box-shadow: 0 0 10px #0000002e;
 }
 #populaire article a{
     width: 100%;
@@ -325,7 +354,7 @@ main section article h2{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 85%;
+    height: 90%;
 }
 .descriptionpop{
     display: flex;
@@ -346,6 +375,7 @@ main section article h2{
 }
 #activites h2{
     margin-left:25px;
+    font-weight: bolder;
 }
 #blocactivites{
     display: flex;
@@ -475,87 +505,149 @@ main section article h2{
     height: 200px;
     background-color: #F2F2F2;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     margin-top: 100px;
 }
-#footer section{
+#footer h3{
+    font-weight: bolder;
+}
+#footer div{
     display: flex;
     flex-direction: column;
-    padding-left: 30px;
-    padding-right: 30px;
+}
+.footer--padding{
+    padding-right: 22%;
+}
+.footermargin{
+    margin-left: 20px;
 }
 /* * * * * * * * * * * * * * * * *MOBILE* * * * * * * * * * * * * * * * */
 @media screen and (max-width: 990px) and (min-width: 768px){
     
-    #cartepop{
+    #hebergementpop{
+        flex-direction: column-reverse;
+        height: auto;
+        margin-bottom: 5px;
+        margin-top: 50px;
+        position: static;
+    }
+    #hebergement{
+        height: auto;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        align-items: center;
-        height: 85%;
+        background-color: white;
     }
-    #hebergementpop{
-        flex-direction: column-reverse;
+    #hebergement a{
+        display: block;
         width: 100%;
+        height: 100%;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    #hebergement h2:first-child{
-        height: 20px;
-        margin-left: 20px;
-        margin-bottom: 50px;
-    } 
+    .afficher{
+        width: 15%;
+        text-decoration: none;
+        display: flex;
+        align-items: flex-start;
+        font-weight: bold;
+        margin: 20px;
+        margin-left: 6%;
+    }
+    .description{
+        width: 90%;
+        justify-content: flex-start;
+        height: 45%;
+    }
+    .description h2{
+        margin-left: 0px;
+        margin-top: 7px;
+    }
+    .description p{
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    .afficher a{
+        text-decoration: none;
+        display: block;
+        justify-content: flex-start;
+        font-weight: bold;
+        margin: 20px;
+        margin-left: 6%;
+        color: black;
+    }
     #hebergement article{
-        max-width: 70%;
-        height: 400px;
-    }  
+        width: 25%;
+        min-width: 230px;
+        height: 210px;
+        background-color: white;
+        border: 1px solid transparent;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3px;
+        box-shadow: 0 0 10px #0000002e;
+    }
+    #hebergement article:hover{
+        cursor: pointer;
+        transform: scale(1.05);
+    }
     #hebergement article img{
-        height: 280px;
+        width: 100%;
+        height: 60%;
+        background-size: cover;
+        background-position: center;
+        border: 1px solid transparent;
+        border-radius: 15px 15px 0 0;
     }
     .cartehebergement1{
-        width: 100%;
-        align-items: center;
-        padding: 0px;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 5px;
+        margin-bottom: 40px;
+        padding-left: 2%;
+        padding-right: 2%;
     }
     .cartehebergement2{
-        width: 100%;
-        align-items: center;
-        padding: 0px;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    main section article h2{
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .headerpop{
+        margin-bottom: 20px;
     }
     #populaire{
         width: 100%;
-        justify-content: center;
         margin-left: 0px;
+        height: auto;
+        border-radius: 0px;
     }
     #populaire article{
-        width: 90%;
+        width: 70%;
         height: 170px;
         display: flex;
         background-color: white;
         border-radius: 15px;
         border: 4px solid transparent;
-        margin-bottom: 5px;
-    }
-    #hebergement{
-        width: 100%;
-        background-color: white;
-    }
-    #hebergement h2:first-child{
-        height: 30px;
-        margin-left: 5px;
         margin-bottom: 30px;
     }
-    .cartehebergement1{
-        flex-direction: column;
 
-    }
-    .cartehebergement2{
-        flex-direction: column;
-    }
-    #hebergement article{
-        width: 90%;
-    }
 } 
 @media screen and (max-width: 768px){
 
+    body{
+        margin: 0px;
+    }
     header nav{
         display: flex;
         flex-direction: column;
@@ -564,6 +656,9 @@ main section article h2{
     }
     header nav img{
         margin-bottom: 20px;
+    }
+    header{
+        width: 100%;
     }
     .lien1{
         justify-content: space-around;
@@ -599,8 +694,12 @@ main section article h2{
         margin-right: 0px;
     }
     #texte{
-        margin-left: 0px;
+        width: 98%;
+        margin-left: 7px;
         margin-bottom: 40px;
+    }
+    #recherche{
+        margin-left: 7px;
     }
     #recherche p{
         display: none;
@@ -622,6 +721,7 @@ main section article h2{
         justify-content: flex-start;
         align-items: flex-start;
         height: auto;
+        margin-left: 7px;
     }
     .familial{
         display: flex;
@@ -631,58 +731,121 @@ main section article h2{
     }
     #info{
         height: 50px;
-        margin-bottom: 0px;
+        margin-bottom: 25px;
         margin-left: 0px;
-        width: 350px;
+        width: 100%;
+    }
+    .logoi{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #0065fc;
+        border: 1px solid #F2F2F2;
+        border-radius:25px;
+        width: 25px;
+        height: 25px;
+    }
+    #info p {
+        padding-left: 15px;
+    } 
+    #hebergement{
+        width: 100%;
+        min-width: 0px;
+        height: auto;
     }
     #hebergementpop{
         flex-direction: column-reverse;
         width: 100%;
+        height: auto;
     }
-    #hebergement h2:first-child{
-        height: 20px;
-        margin-left: 20px;
-        margin-bottom: 50px;
-    } 
     #hebergement article{
-        max-width: 84%;
-        height: 360px;
-    }  
+        width: 85%;
+        max-width: 400px;
+        height: 200px;
+    }
+    #hebergement article:hover{
+        cursor: pointer;
+        transform: scale(1);
+    }
     #hebergement article img{
-        height: 230px;
+        height: 60%;
+        background-position: center;
+        object-fit: cover;
+    }
+    .description{
+        width: 90%;
+        justify-content: flex-start;
+        height: 30%;
+    }
+    .description h2{
+        margin-left: 0px;
+        margin-top: 3px;
+        margin-bottom: 2px;
+    }
+    .description p{
+        margin-top: 6px;
+        margin-bottom: 6px;
     }
     .cartehebergement1{
         width: 100%;
+        height: 680px;
         align-items: center;
         padding: 0px;
+        margin-bottom: 0px;
     }
     .cartehebergement2{
         width: 100%;
+        height: 680px;
         align-items: center;
         padding: 0px;
+    }
+    .headerpop{
+        margin-left: 5px;
+        margin-top: 5px;
+        width: 95%;
+    }
+    .headerpop h2{
+        margin-left: 20px;
     }
     #populaire{
         width: 100%;
         justify-content: center;
         margin-left: 0px;
+        border-radius: 0px;
+        border: none;
     }
     #populaire article{
-        width: 95%;
+        width: 87%;
         height: 140px;
         display: flex;
         background-color: white;
         border-radius: 15px;
-        border: 4px solid transparent;
-        margin-bottom: 5px;
+        border: 1px solid transparent;
+        margin-bottom: 8px;
+    }
+    #populaire article img{
+        object-fit: cover;
+    }
+    #populaire article:hover{
+        cursor: pointer;
+        transform: scale(1);
+    }
+    #cartepop{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
     #hebergement{
         width: 100%;
+        height: auto;
         background-color: white;
     }
-    #hebergement h2:first-child{
+    .titrehebergement{
         height: 30px;
-        margin-left: 5px;
-        margin-bottom: 30px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-weight: bold;
     }
     .cartehebergement1{
         flex-direction: column;
@@ -704,7 +867,7 @@ main section article h2{
         margin-left: 5px;
     }
     #activites h2{
-        margin-left:0px;
+        margin-left:20px;
     }
     #blocactivites{
         flex-direction: column;
@@ -731,23 +894,45 @@ main section article h2{
         height: 300px;
     }
     #activites{
-        justify-content:center;
-        align-items: center;
+        margin-top: 5px;
     }
     .carteactivites1{
-        height: 250px;
-        width: 85%;
+        height: 180px;
+        width: 90%;
+        max-width: 400px;
+        margin-top: 20px;
         margin-right: 0px;
         margin-bottom: 20px;
     }
     .carteactivites2356{
-        height: 500px;
-        width: 85%;
+        height: 400px;
+        width: 90%;
+        max-width: 400px;
         margin-right: 0px;
+    }
+    .carteactivites1:hover{
+        cursor: pointer;
+        transform: scale(1);
+    }
+    .blocactivites2:hover{
+        cursor: pointer;
+        transform: scale(1);
+    }
+    .blocactivites3:hover{
+        cursor: pointer;
+        transform: scale(1);
+    }
+    .blocactivites5:hover{
+        cursor: pointer;
+        transform: scale(1);
+    }
+    .blocactivites6:hover{
+        cursor: pointer;
+        transform: scale(1);
     }
     .imgactivites1{
         width: 100%;
-        height: 80%;
+        height: 133px;
         border-radius: 15px 15px 0 0;
         background-image: url("../img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
         background-size: cover;
@@ -755,7 +940,7 @@ main section article h2{
     }
     .imgactivites2{
         width: 100%;
-        height: 80%;
+        height: 133px;
         border-radius: 15px 15px 0 0;
         background-image: url("../img/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
         background-size: cover;
@@ -763,7 +948,7 @@ main section article h2{
     }
     .imgactivites3{
         width: 100%;
-        height: 80%;
+        height: 133px;
         border-radius: 15px 15px 0 0;
         background-image: url("../img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
         background-size: cover;
@@ -771,7 +956,7 @@ main section article h2{
     }
     .imgactivites4{
         width: 100%;
-        height: 80%;
+        height: 133px;
         border-radius: 15px 15px 0 0;
         background-image: url("../img/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
         background-size: cover;
@@ -779,7 +964,7 @@ main section article h2{
     }
     .imgactivites5{
         width: 100%;
-        height: 80%;
+        height: 133px;
         border-radius: 15px 15px 0 0;
         background-image: url("../img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
         background-size: cover;
@@ -787,7 +972,7 @@ main section article h2{
     }
     .imgactivites6{
         width: 100%;
-        height: 80%;
+        height: 133px;
         border-radius: 15px 15px 0 0;
         background-image: url("../img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
         background-size: cover;
@@ -796,6 +981,10 @@ main section article h2{
     #footer{
         flex-direction: column;
         height: auto;
+    }
+    #footer div{
+        padding: 0px;
+        margin-left: 20px;
     }
 }
 
